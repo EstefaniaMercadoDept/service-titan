@@ -2110,20 +2110,17 @@
           document.execCommand('copy');
           document.body.removeChild(tempInput);
 
-          // Create tooltip
           let tooltip = document.createElement('div');
           tooltip.className = 'copy-tooltip';
           tooltip.textContent = 'Copied';
           document.body.appendChild(tooltip);
 
-          // Position tooltip near the button
           const rect = button.getBoundingClientRect();
           tooltip.style.left = `${
             rect.left + window.scrollX + rect.width / 2
           }px`;
           tooltip.style.top = `${rect.top + window.scrollY - 30}px`;
 
-          // Remove tooltip after 1.5 seconds
           setTimeout(() => {
             tooltip.style.opacity = '0';
             setTimeout(() => tooltip.remove(), 300);
