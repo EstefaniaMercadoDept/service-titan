@@ -555,7 +555,6 @@ p {
 }
 
 .grey-card:hover,
-.red-card:hover,
 .black-card:hover {
   background-color: #e24e4f;
   color: #ffffff;
@@ -566,6 +565,10 @@ p {
       color: #ffffff85;
     }
   }
+}
+
+.grey-card:hover .copy-btn {
+  filter: invert(1);
 }
 
 .red-card {
