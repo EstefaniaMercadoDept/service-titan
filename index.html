@@ -1058,7 +1058,7 @@
               <img
                 src="assets/picture-cost-of-downtime.svg"
                 alt="Cost of Downtime Card Image"
-                class="card-image my-3 image-small"
+                class="card-image my-3 image-small img-hover-1"
                 width="226"
               />
               <img
@@ -1089,7 +1089,7 @@
               <img
                 src="assets/picture-repair-costs.svg"
                 alt="Repair Costs Image"
-                class="card-image my-3 image-small"
+                class="card-image my-3 image-small img-hover-2"
                 width="198"
               />
               <img
@@ -1278,9 +1278,9 @@
                 >
               </p>
               <img
-                src="assets/picture-tough-first -years.svg"
+                src="assets/picture-tough-first-years.svg"
                 alt="Tough First Years Image"
-                class="card-image my-4"
+                class="card-image my-4 img-hover-3"
                 width="394"
               />
               <img
@@ -2109,6 +2109,25 @@
           tempInput.select();
           document.execCommand('copy');
           document.body.removeChild(tempInput);
+
+          // Create tooltip
+          let tooltip = document.createElement('div');
+          tooltip.className = 'copy-tooltip';
+          tooltip.textContent = 'Copied';
+          document.body.appendChild(tooltip);
+
+          // Position tooltip near the button
+          const rect = button.getBoundingClientRect();
+          tooltip.style.left = `${
+            rect.left + window.scrollX + rect.width / 2
+          }px`;
+          tooltip.style.top = `${rect.top + window.scrollY - 30}px`;
+
+          // Remove tooltip after 1.5 seconds
+          setTimeout(() => {
+            tooltip.style.opacity = '0';
+            setTimeout(() => tooltip.remove(), 300);
+          }, 500);
         });
       });
 
