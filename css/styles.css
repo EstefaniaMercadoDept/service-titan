@@ -713,7 +713,7 @@ p {
 }
 
 .preload-hover-1 {
-  background: url('./assets/picture-cost-of-downtime-hover.svg') no-repeat -9999px -9999px;
+  background: url('../assets/picture-cost-of-downtime-hover.svg') no-repeat -9999px -9999px;
 }
 
 .preload-hover-2 {
