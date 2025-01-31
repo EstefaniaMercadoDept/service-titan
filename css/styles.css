@@ -712,6 +712,18 @@ p {
   content: url('../assets/picture-tough-first-years-hover.svg');
 }
 
+.preload-hover-1 {
+  background: url('./assets/picture-cost-of-downtime-hover.svg') no-repeat -9999px -9999px;
+}
+
+.preload-hover-2 {
+  background: url('../assets/picture-repair-costs-hover.svg') no-repeat -9999px -9999px;
+}
+
+.preload-hover-3 {
+  background: url('../assets/picture-tough-first-years-hover.svg') no-repeat -9999px -9999px;
+}
+
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end;
