@@ -624,6 +624,10 @@ p {
   cursor: pointer;
 }
 
+.copy-btn:hover {
+  width: 38px;
+  height: 38px;
+}
 .card-image {
   margin: 2rem auto 1rem;
 }
