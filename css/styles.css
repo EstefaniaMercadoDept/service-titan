@@ -24,7 +24,6 @@ body {
 h1 {
   font-size: 1.75rem;
   margin-top: 3rem !important;
-  font-family: 'Sofia Pro Regular Az';
 }
 
 @media (min-width: 1200px) {
@@ -34,6 +33,7 @@ h1 {
   }
 }
 
+h1,
 h2 {
   font-family: 'Sofia Pro Semi Bold Az';
 }
